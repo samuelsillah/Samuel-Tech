@@ -1,9 +1,11 @@
+#This program is how you can you can connect your SQL Server in python, you can write and read data in SQL as well in python
+
 import pyodbc
 
 # Connection Details
-server = 'DESKTOP-U4LJQED'
-database = 'Code'
-driver = '{ODBC Driver 17 for SQL Server}'  # Adjust based on your installed driver
+server = 'your-servername'
+database = 'DatabaseName'
+driver = '{Drivername}'  # Adjust based on your installed driver
 
 # Connect to SQL Server (Windows Authentication)
 conn_str = f'DRIVER={driver};SERVER={server};DATABASE={database};Trusted_Connection=yes;'
